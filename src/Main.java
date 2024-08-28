@@ -70,30 +70,13 @@ public class Main {
         System.out.println();
 
         //Задача №5
-        int monthNumber = 13;
+        int monthNumber = 5;
         switch (monthNumber) {
-            case 12:
-            case 1:
-            case 2:
-                System.out.println("Зимний месяц");
-                break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Весенний месяц");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println("Летний месяц");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println("Осенний месяц");
-                break;
-            default:
-                System.out.println("Такого месяца не существует");
+            case 12, 1, 2 -> System.out.println("Зимний месяц");
+            case 3, 4, 5 -> System.out.println("Весенний месяц");
+            case 6, 7, 8 -> System.out.println("Летний месяц");
+            case 9, 10, 11 -> System.out.println("Осенний месяц");
+            default -> System.out.println("Такого месяца не существует");
         }
     }
 }
